@@ -91,7 +91,7 @@ def train(model, loader, criterion, optimizer, epochs=5):
 ```
 
 ```py
-def visualize_denoising(model, loader, num_images=10):
+def visualize_denoising(model, loader, num_images=5):
     model.eval()
     with torch.no_grad():
         for images, _ in loader:
@@ -135,8 +135,7 @@ def visualize_denoising(model, loader, num_images=10):
 
 ### Original vs Noisy Vs Reconstructed Image
 
-<img width="1661" height="741" alt="image" src="https://github.com/user-attachments/assets/72767e85-863a-4e0d-9318-678d6409f926" />
-
+<img width="1349" height="684" alt="image" src="https://github.com/user-attachments/assets/27aa327e-55eb-4fa3-a586-dc8258f6ed30" />
 
 ## RESULT
 The convolutional autoencoder was successfully trained to denoise MNIST digit images. The model effectively reconstructed clean images from their noisy versions, demonstrating its capability in feature extraction and noise reduction.
